@@ -18,7 +18,7 @@ gr.Interface(
     title="Kunden-Support-Chatbot"
 ).launch()
 import os
-port = int(os.environ.get("PORT", 4000))
+port = int(os.environ.get("PORT", 80))
 gr.Interface(
     fn=chatbot,
     inputs=[gr.Text(label="Frage"), gr.Text(label="Kundencode")],
